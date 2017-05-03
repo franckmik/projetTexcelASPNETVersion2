@@ -1,0 +1,50 @@
+﻿@model IEnumerable<TexcelASPNETbyEddy.tblSE>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nomSE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.editionSE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.versionSE)
+        </th>
+        <!--<th>
+            Html.DisplayNameFor(model => model.tagSE)
+        </th>-->
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.editionSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.versionSE)
+        </td>
+        <!--<td>
+            Html.DisplayFor(modelItem => item.tagSE)
+        </td>-->
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.codeSE }) |
+            @Html.ActionLink("Details", "Details", new { id=item.codeSE }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.codeSE })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BdTexcelModelStoreContainer" CdmEntityContainer="BdTexcelEntities">
+    <EntitySetMapping Name="tblAdministrateur">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblAdministrateur">
+        <MappingFragment StoreEntitySet="tblAdministrateur">
+          <ScalarProperty Name="idAdministrateur" ColumnName="idAdministrateur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategorie">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblCategorie">
+        <MappingFragment StoreEntitySet="tblCategorie">
+          <ScalarProperty Name="idCategorie" ColumnName="idCategorie" />
+          <ScalarProperty Name="descriptionCategorie" ColumnName="descriptionCategorie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategorieEmploi">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblCategorieEmploi">
+        <MappingFragment StoreEntitySet="tblCategorieEmploi">
+          <ScalarProperty Name="idCategorieEmploi" ColumnName="idCategorieEmploi" />
+          <ScalarProperty Name="descriptionCategorieEmploi" ColumnName="descriptionCategorieEmploi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblClassification">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblClassification">
+        <MappingFragment StoreEntitySet="tblClassification">
+          <ScalarProperty Name="idClassification" ColumnName="idClassification" />
+          <ScalarProperty Name="descriptionClassification" ColumnName="descriptionClassification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDirecteur">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblDirecteur">
+        <MappingFragment StoreEntitySet="tblDirecteur">
+          <ScalarProperty Name="idDirecteur" ColumnName="idDirecteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmploye">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblEmploye">
+        <MappingFragment StoreEntitySet="tblEmploye">
+          <ScalarProperty Name="idEmploye" ColumnName="idEmploye" />
+          <ScalarProperty Name="nomEmploye" ColumnName="nomEmploye" />
+          <ScalarProperty Name="prenomEmploye" ColumnName="prenomEmploye" />
+          <ScalarProperty Name="dateDeNaissanceEmploye" ColumnName="dateDeNaissanceEmploye" />
+          <ScalarProperty Name="adresseligne1Employe" ColumnName="adresseligne1Employe" />
+          <ScalarProperty Name="adresseligne2Employe" ColumnName="adresseligne2Employe" />
+          <ScalarProperty Name="codePostalEmploye" ColumnName="codePostalEmploye" />
+          <ScalarProperty Name="telephoneResidenceEmploye" ColumnName="telephoneResidenceEmploye" />
+          <ScalarProperty Name="posteTelephoniqueEmploye" ColumnName="posteTelephoniqueEmploye" />
+          <ScalarProperty Name="matriculeEmploye" ColumnName="matriculeEmploye" />
+          <ScalarProperty Name="idVille" ColumnName="idVille" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEquipe">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblEquipe">
+        <MappingFragment StoreEntitySet="tblEquipe">
+          <ScalarProperty Name="idEquipe" ColumnName="idEquipe" />
+          <ScalarProperty Name="nomEquipe" ColumnName="nomEquipe" />
+          <ScalarProperty Name="idChefEquipe" ColumnName="idChefEquipe" />
+          <ScalarProperty Name="idDirecteur" ColumnName="idDirecteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGenre">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblGenre">
+        <MappingFragment StoreEntitySet="tblGenre">
+          <ScalarProperty Name="idGenre" ColumnName="idGenre" />
+          <ScalarProperty Name="descriptionGenre" ColumnName="descriptionGenre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGerant">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblGerant">
+        <MappingFragment StoreEntitySet="tblGerant">
+          <ScalarProperty Name="idGerant" ColumnName="idGerant" />
+          <ScalarProperty Name="loginGerant" ColumnName="loginGerant" />
+          <ScalarProperty Name="motDePasseGerant" ColumnName="motDePasseGerant" />
+          <ScalarProperty Name="roleGerant" ColumnName="roleGerant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblJeu">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblJeu">
+        <MappingFragment StoreEntitySet="tblJeu">
+          <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+          <ScalarProperty Name="nomJeu" ColumnName="nomJeu" />
+          <ScalarProperty Name="devellopeurJeu" ColumnName="devellopeurJeu" />
+          <ScalarProperty Name="descriptionJeu" ColumnName="descriptionJeu" />
+          <ScalarProperty Name="configurationMinimaleJeu" ColumnName="configurationMinimaleJeu" />
+          <ScalarProperty Name="idProjetTest" ColumnName="idProjetTest" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPlateforme">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblPlateforme">
+        <MappingFragment StoreEntitySet="tblPlateforme">
+          <ScalarProperty Name="idPlateforme" ColumnName="idPlateforme" />
+          <ScalarProperty Name="nomPlateforme" ColumnName="nomPlateforme" />
+          <ScalarProperty Name="configurationPlateforme" ColumnName="configurationPlateforme" />
+          <ScalarProperty Name="idTypePlateforme" ColumnName="idTypePlateforme" />
+          <ScalarProperty Name="codeSE" ColumnName="codeSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProjetTest">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblProjetTest">
+        <MappingFragment StoreEntitySet="tblProjetTest">
+          <ScalarProperty Name="idProjetTest" ColumnName="idProjetTest" />
+          <ScalarProperty Name="nomProjetTest" ColumnName="nomProjetTest" />
+          <ScalarProperty Name="dateCreationProjetTest" ColumnName="dateCreationProjetTest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSE">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblSE">
+        <MappingFragment StoreEntitySet="tblSE">
+          <ScalarProperty Name="codeSE" ColumnName="codeSE" />
+          <ScalarProperty Name="nomSE" ColumnName="nomSE" />
+          <ScalarProperty Name="editionSE" ColumnName="editionSE" />
+          <ScalarProperty Name="versionSE" ColumnName="versionSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTest">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblTest">
+        <MappingFragment StoreEntitySet="tblTest">
+          <ScalarProperty Name="idTest" ColumnName="idTest" />
+          <ScalarProperty Name="descriptionTest" ColumnName="descriptionTest" />
+          <ScalarProperty Name="idCategorie" ColumnName="idCategorie" />
+          <ScalarProperty Name="idEquipe" ColumnName="idEquipe" />
+          <ScalarProperty Name="idProjetTest" ColumnName="idProjetTest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTheme">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblTheme">
+        <MappingFragment StoreEntitySet="tblTheme">
+          <ScalarProperty Name="idTheme" ColumnName="idTheme" />
+          <ScalarProperty Name="descriptionTheme" ColumnName="descriptionTheme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTypePlateforme">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblTypePlateforme">
+        <MappingFragment StoreEntitySet="tblTypePlateforme">
+          <ScalarProperty Name="idTypePlateforme" ColumnName="idTypePlateforme" />
+          <ScalarProperty Name="nomTypePlateforme" ColumnName="nomTypePlateforme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVille">
+      <EntityTypeMapping TypeName="BdTexcelModel.tblVille">
+        <MappingFragment StoreEntitySet="tblVille">
+          <ScalarProperty Name="idVille" ColumnName="idVille" />
+          <ScalarProperty Name="nomVille" ColumnName="nomVille" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueAdministrateur">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueAdministrateur">
+        <MappingFragment StoreEntitySet="vueAdministrateur">
+          <ScalarProperty Name="idAdministrateur" ColumnName="idAdministrateur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueCategorie">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueCategorie">
+        <MappingFragment StoreEntitySet="vueCategorie">
+          <ScalarProperty Name="idCategorie" ColumnName="idCategorie" />
+          <ScalarProperty Name="descriptionCategorie" ColumnName="descriptionCategorie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueCategorieEmploi">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueCategorieEmploi">
+        <MappingFragment StoreEntitySet="vueCategorieEmploi">
+          <ScalarProperty Name="idCategorieEmploi" ColumnName="idCategorieEmploi" />
+          <ScalarProperty Name="descriptionCategorieEmploi" ColumnName="descriptionCategorieEmploi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueCategorieEmploiEmploye">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueCategorieEmploiEmploye">
+        <MappingFragment StoreEntitySet="vueCategorieEmploiEmploye">
+          <ScalarProperty Name="idEmploye" ColumnName="idEmploye" />
+          <ScalarProperty Name="idCategorieEmploi" ColumnName="idCategorieEmploi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueClassification">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueClassification">
+        <MappingFragment StoreEntitySet="vueClassification">
+          <ScalarProperty Name="idClassification" ColumnName="idClassification" />
+          <ScalarProperty Name="descriptionClassification" ColumnName="descriptionClassification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueClassificationJeu">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueClassificationJeu">
+        <MappingFragment StoreEntitySet="vueClassificationJeu">
+          <ScalarProperty Name="idClassification" ColumnName="idClassification" />
+          <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueDirecteur">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueDirecteur">
+        <MappingFragment StoreEntitySet="vueDirecteur">
+          <ScalarProperty Name="idDirecteur" ColumnName="idDirecteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueEmploye">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueEmploye">
+        <MappingFragment StoreEntitySet="vueEmploye">
+          <ScalarProperty Name="idEmploye" ColumnName="idEmploye" />
+          <ScalarProperty Name="nomEmploye" ColumnName="nomEmploye" />
+          <ScalarProperty Name="prenomEmploye" ColumnName="prenomEmploye" />
+          <ScalarProperty Name="dateDeNaissanceEmploye" ColumnName="dateDeNaissanceEmploye" />
+          <ScalarProperty Name="adresseligne1Employe" ColumnName="adresseligne1Employe" />
+          <ScalarProperty Name="adresseligne2Employe" ColumnName="adresseligne2Employe" />
+          <ScalarProperty Name="codePostalEmploye" ColumnName="codePostalEmploye" />
+          <ScalarProperty Name="telephoneResidenceEmploye" ColumnName="telephoneResidenceEmploye" />
+          <ScalarProperty Name="posteTelephoniqueEmploye" ColumnName="posteTelephoniqueEmploye" />
+          <ScalarProperty Name="matriculeEmploye" ColumnName="matriculeEmploye" />
+          <ScalarProperty Name="idVille" ColumnName="idVille" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueEquipe">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueEquipe">
+        <MappingFragment StoreEntitySet="vueEquipe">
+          <ScalarProperty Name="idEquipe" ColumnName="idEquipe" />
+          <ScalarProperty Name="nomEquipe" ColumnName="nomEquipe" />
+          <ScalarProperty Name="idChefEquipe" ColumnName="idChefEquipe" />
+          <ScalarProperty Name="idDirecteur" ColumnName="idDirecteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueEquipeEmploye">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueEquipeEmploye">
+        <MappingFragment StoreEntitySet="vueEquipeEmploye">
+          <ScalarProperty Name="idEmploye" ColumnName="idEmploye" />
+          <ScalarProperty Name="idEquipe" ColumnName="idEquipe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueGenre">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueGenre">
+        <MappingFragment StoreEntitySet="vueGenre">
+          <ScalarProperty Name="idGenre" ColumnName="idGenre" />
+          <ScalarProperty Name="descriptionGenre" ColumnName="descriptionGenre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueGenreJeu">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueGenreJeu">
+        <MappingFragment StoreEntitySet="vueGenreJeu">
+          <ScalarProperty Name="idGenre" ColumnName="idGenre" />
+          <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueGerant">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueGerant">
+        <MappingFragment StoreEntitySet="vueGerant">
+          <ScalarProperty Name="idGerant" ColumnName="idGerant" />
+          <ScalarProperty Name="loginGerant" ColumnName="loginGerant" />
+          <ScalarProperty Name="motDePasseGerant" ColumnName="motDePasseGerant" />
+          <ScalarProperty Name="roleGerant" ColumnName="roleGerant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueJeu">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueJeu">
+        <MappingFragment StoreEntitySet="vueJeu">
+          <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+          <ScalarProperty Name="nomJeu" ColumnName="nomJeu" />
+          <ScalarProperty Name="devellopeurJeu" ColumnName="devellopeurJeu" />
+          <ScalarProperty Name="descriptionJeu" ColumnName="descriptionJeu" />
+          <ScalarProperty Name="configurationMinimaleJeu" ColumnName="configurationMinimaleJeu" />
+          <ScalarProperty Name="idProjetTest" ColumnName="idProjetTest" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vuePlateforme">
+      <EntityTypeMapping TypeName="BdTexcelModel.vuePlateforme">
+        <MappingFragment StoreEntitySet="vuePlateforme">
+          <ScalarProperty Name="idPlateforme" ColumnName="idPlateforme" />
+          <ScalarProperty Name="nomPlateforme" ColumnName="nomPlateforme" />
+          <ScalarProperty Name="configurationPlateforme" ColumnName="configurationPlateforme" />
+          <ScalarProperty Name="idTypePlateforme" ColumnName="idTypePlateforme" />
+          <ScalarProperty Name="codeSE" ColumnName="codeSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vuePlateformeJeu">
+      <EntityTypeMapping TypeName="BdTexcelModel.vuePlateformeJeu">
+        <MappingFragment StoreEntitySet="vuePlateformeJeu">
+          <ScalarProperty Name="idPlateforme" ColumnName="idPlateforme" />
+          <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueProjetTest">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueProjetTest">
+        <MappingFragment StoreEntitySet="vueProjetTest">
+          <ScalarProperty Name="idProjetTest" ColumnName="idProjetTest" />
+          <ScalarProperty Name="nomProjetTest" ColumnName="nomProjetTest" />
+          <ScalarProperty Name="dateCreationProjetTest" ColumnName="dateCreationProjetTest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueSE">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueSE">
+        <MappingFragment StoreEntitySet="vueSE">
+          <ScalarProperty Name="codeSE" ColumnName="codeSE" />
+          <ScalarProperty Name="nomSE" ColumnName="nomSE" />
+          <ScalarProperty Name="editionSE" ColumnName="editionSE" />
+          <ScalarProperty Name="versionSE" ColumnName="versionSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueTest">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueTest">
+        <MappingFragment StoreEntitySet="vueTest">
+          <ScalarProperty Name="idTest" ColumnName="idTest" />
+          <ScalarProperty Name="descriptionTest" ColumnName="descriptionTest" />
+          <ScalarProperty Name="idCategorie" ColumnName="idCategorie" />
+          <ScalarProperty Name="idEquipe" ColumnName="idEquipe" />
+          <ScalarProperty Name="idProjetTest" ColumnName="idProjetTest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueTheme">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueTheme">
+        <MappingFragment StoreEntitySet="vueTheme">
+          <ScalarProperty Name="idTheme" ColumnName="idTheme" />
+          <ScalarProperty Name="descriptionTheme" ColumnName="descriptionTheme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueThemeJeu">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueThemeJeu">
+        <MappingFragment StoreEntitySet="vueThemeJeu">
+          <ScalarProperty Name="idTheme" ColumnName="idTheme" />
+          <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueTypePlateforme">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueTypePlateforme">
+        <MappingFragment StoreEntitySet="vueTypePlateforme">
+          <ScalarProperty Name="idTypePlateforme" ColumnName="idTypePlateforme" />
+          <ScalarProperty Name="nomTypePlateforme" ColumnName="nomTypePlateforme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vueVille">
+      <EntityTypeMapping TypeName="BdTexcelModel.vueVille">
+        <MappingFragment StoreEntitySet="vueVille">
+          <ScalarProperty Name="idVille" ColumnName="idVille" />
+          <ScalarProperty Name="nomVille" ColumnName="nomVille" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="tblCategorieEmploiEmploye" TypeName="BdTexcelModel.tblCategorieEmploiEmploye" StoreEntitySet="tblCategorieEmploiEmploye">
+      <EndProperty Name="tblCategorieEmploi">
+        <ScalarProperty Name="idCategorieEmploi" ColumnName="idCategorieEmploi" />
+      </EndProperty>
+      <EndProperty Name="tblEmploye">
+        <ScalarProperty Name="idEmploye" ColumnName="idEmploye" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tblClassificationJeu" TypeName="BdTexcelModel.tblClassificationJeu" StoreEntitySet="tblClassificationJeu">
+      <EndProperty Name="tblClassification">
+        <ScalarProperty Name="idClassification" ColumnName="idClassification" />
+      </EndProperty>
+      <EndProperty Name="tblJeu">
+        <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tblEquipeEmploye" TypeName="BdTexcelModel.tblEquipeEmploye" StoreEntitySet="tblEquipeEmploye">
+      <EndProperty Name="tblEmploye">
+        <ScalarProperty Name="idEmploye" ColumnName="idEmploye" />
+      </EndProperty>
+      <EndProperty Name="tblEquipe">
+        <ScalarProperty Name="idEquipe" ColumnName="idEquipe" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tblGenreJeu" TypeName="BdTexcelModel.tblGenreJeu" StoreEntitySet="tblGenreJeu">
+      <EndProperty Name="tblGenre">
+        <ScalarProperty Name="idGenre" ColumnName="idGenre" />
+      </EndProperty>
+      <EndProperty Name="tblJeu">
+        <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tblPlateformeJeu" TypeName="BdTexcelModel.tblPlateformeJeu" StoreEntitySet="tblPlateformeJeu">
+      <EndProperty Name="tblJeu">
+        <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+      </EndProperty>
+      <EndProperty Name="tblPlateforme">
+        <ScalarProperty Name="idPlateforme" ColumnName="idPlateforme" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tblThemeJeu" TypeName="BdTexcelModel.tblThemeJeu" StoreEntitySet="tblThemeJeu">
+      <EndProperty Name="tblJeu">
+        <ScalarProperty Name="idJeu" ColumnName="idJeu" />
+      </EndProperty>
+      <EndProperty Name="tblTheme">
+        <ScalarProperty Name="idTheme" ColumnName="idTheme" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
